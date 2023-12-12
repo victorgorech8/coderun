@@ -30,19 +30,20 @@ if (zet(1,r1,r2,r3)==0):
 a=1
 b=h   
 while(abs(a-b)>1):
-    if (zet(i,r1,r2,r3)<0):
-        a=i
-    if(zet(i,r1,r2,r3)>0):
-        b=i
     if (zet(i,r1,r2,r3)==0):
         z=i
         y=int((-2*(-r1+z)+(4*(-r1+z)**2-8*(r1**2-r2-2*r1*z+2*z**2))**(1/2))/4)
         x=int(r1-z-y)
         print(x,y,z)
         sys.exit()
+
+    if (zet(i,r1,r2,r3)<0):
+        a=i
+    if(zet(i,r1,r2,r3)>0):
+        b=i
     i=a+math.floor(b-a)
 
-    
+
 if (zet(a,r1,r2,r3)==0):
     z=a
     y=int((-2*(-r1+z)+(4*(-r1+z)**2-8*(r1**2-r2-2*r1*z+2*z**2))**(1/2))/4)
